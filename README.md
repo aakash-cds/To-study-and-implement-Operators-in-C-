@@ -1,21 +1,78 @@
-# To-study-and-implement-Operators-in-C-
+Aakash Choudhari
 
-Aim: The aim is to study and implement various operators in C++, including arithmetic, relational, and logical operators, to understand their usage and impact on data manipulation and decision making.
+E&TC-A2
 
-Procedure:
+24070123031
 
-  1) Write a C++ program that demonstrates the use of arithmetic operators like addition (+), subtraction (-), multiplication (*), division (/), and modulus (%).
+# 🧪 Experiment 3 - Bitwise Operators in C++
 
-  2) Take two integer inputs from the user using cin.
+## 🎯 Aim:
+To understand and implement various bitwise operations in C++ and analyze how they manipulate individual bits of integer values.
 
-  3) Perform arithmetic operations and display the results using cout.
+---
 
-  4) Implement relational operators such as equal to (==), not equal to (!=), greater than (>), less than (<), greater than or equal to (>=), and less than or equal to (<=).
+## 🧠 Theory:
 
-  5) Compare the input values using relational operators and display the boolean results.
+In C++, **bitwise operators** are used to perform operations at the binary level — directly manipulating the bits of integer data types. These operations are extremely fast and useful in systems programming, embedded systems, and performance-critical applications.
 
-  6) Demonstrate the use of logical operators (&&, ||, !) in combining relational expressions.
+Bitwise operations can only be applied to **integral types** (e.g., `int`, `char`, `long`).
 
-  7) Compile and run the program to verify all outputs.
+---
 
-Conclusion: This experiment provided a thorough understanding of how arithmetic, relational, and logical operators function in C++. It demonstrated the importance of these operators in performing calculations and making decisions based on conditions in a program.
+### ➤ Bitwise Operators in C++
+
+| Operator | Symbol | Description                                      | Example (a = 5, b = 3) |
+|----------|--------|--------------------------------------------------|------------------------|
+| AND      | `&`    | Sets bit to 1 if both bits are 1                | `a & b` → `5 & 3 = 1`  |
+| OR       | `|`    | Sets bit to 1 if at least one bit is 1          | `a | b` → `5 | 3 = 7`  |
+| XOR      | `^`    | Sets bit to 1 if only one of the bits is 1      | `a ^ b` → `5 ^ 3 = 6`  |
+| NOT      | `~`    | Inverts all bits (1’s complement)               | `~a` → `~5 = -6`       |
+| Left Shift  | `<<` | Shifts bits to the left, filling 0s on right    | `a << 1` → `10`        |
+| Right Shift | `>>` | Shifts bits to the right, discards right bits   | `a >> 1` → `2`         |
+
+### 🔍 Binary Example:
+For integers `a = 5` and `b = 3`:
+a = 5 → 0101
+b = 3 → 0011
+
+a & b = 0001 → 1
+a | b = 0111 → 7
+a ^ b = 0110 → 6
+~a    = 1010 → -6 (due to two’s complement)
+
+---
+
+## ⚙️ Procedure:
+
+1. Open your C++ environment and create a new program file.
+2. Declare integer variables (e.g., `int a = 5, b = 3;`).
+3. Apply each bitwise operator:
+   - AND `&`, OR `|`, XOR `^`, NOT `~`, Left Shift `<<`, Right Shift `>>`
+4. Use `cout` to display the results of each operation.
+5. Observe and verify the outputs based on the binary representations.
+
+---
+
+## 🔍 Learning Outcomes:
+
+- Gained a clear understanding of how bits are manipulated in memory.
+- Explored the difference between logical and bitwise operations.
+- Understood shift operations and how they affect the magnitude of numbers.
+- Observed the behavior of negative numbers with bitwise NOT.
+
+---
+
+## 📌 Key Concepts Covered:
+
+- Binary representation of integers
+- Bitwise logical operations (`&`, `|`, `^`, `~`)
+- Bit shifting (`<<`, `>>`)
+- Application of bitwise operations in low-level computing
+
+---
+
+## 📝 Experiment Summary:
+
+This experiment explored **bitwise operators**, which work directly on the binary bits of data. Understanding these operations is crucial for low-level programming, optimization, cryptography, and embedded systems development. Bitwise manipulation gives a deeper appreciation of how computers interpret and store data at the hardware level.
+
+---
